@@ -237,11 +237,12 @@ $resultDataNom = $_SESSION['Nom'];
           <td class="pessoa">
 
             <div class="info-pessoa">
-              <p> <?= $data['nom_cientista'] ?> • Biólogo Marinho </p>
+              <p> <?= $data['nom_cientista'] ?> • <?= $data['nom_area_atuacao'] ?> </p>
               <div class="redes">
                 <div class="linkedin">
                   <img src="./img/bxl-linkedin.svg" alt="Linkedin logo">
                   <p> https://br.linkedin.com/ </p>
+                  <p>Status do projeto: <?php if($data['pub_projeto'] == 1){ echo 'publico';}else{ echo 'privado';} ?> </p>
                 </div>
                 <div class="email">
                   <img src="./img/bx-envelope.svg" alt="email logo">

@@ -136,16 +136,16 @@ $resultData2 = $_SESSION["queryTabela2"];
         <div class="info-pessoa">
           <div>
             <?php foreach ($resultData2 as $data2) : ?>
-              <p> Gabriel Lamarca<?= $data['nom_cientista'] ?> • Desenvolvedor<?= $data2['nom_area_atuacao'] ?> </p>
+              <p><?= $data['nom_cientista'] ?> • <?= $data2['nom_area_atuacao'] ?> </p>
               <?php endforeach; ?>
               <div class="redes">
                 <div class="linkedin">
                   <img src="./img/bxl-linkedin.svg" alt="Linkedin logo">
-                  <p> https://Linkedin/teste.com.br <?= $data['end_rede_social'] ?> </p>
+                  <p><?= $data['end_rede_social'] ?> </p>
                 </div>
                 <div class="email">
                   <img src="./img/bx-envelope.svg" alt="email logo">
-                <p> teste@gmail.com<?= $data['nom_cientista'] ?> </p>
+                <p><?= $data['nom_cientista'] ?> </p>
               </div>
               </div>
           </div>

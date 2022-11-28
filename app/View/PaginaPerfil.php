@@ -49,7 +49,7 @@ $resultData = $_SESSION['PaginaPerfil'];
       <?php endforeach; ?>
 
       <i>
-        <h4>Biólogo</h4>
+        <h4><?= $data['nom_area_atuacao'] ?></h4>
       </i>
       <br>
     </div>
@@ -88,7 +88,7 @@ $resultData = $_SESSION['PaginaPerfil'];
           <div class="data">
             <h4>Área de Atuação</h4>
             <b>
-              <p>Biólogo Marinho</p>
+              <p><?= $data['nom_area_atuacao'] ?></p>
             </b>
           </div>
           <div class="data">

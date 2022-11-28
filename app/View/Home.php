@@ -5,8 +5,6 @@
             - Mostrar as publicações que os usuarios fizeram e proporcionar navegação ao usuario 
 
 -->
-
-
 <?php
   session_start();
 
@@ -38,16 +36,16 @@
 
 <!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <title> Scilink - Plataforma de Cientistas</title>
+  <link rel="icon" type="image/jpg" href="../View/img/logo.png" />
   <link rel="stylesheet" href="./style/styleDash.css">
   <!-- Boxicons CDN Link -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/jpg" href="../View/img/logo.png" />
 </head>
 
 <body>
@@ -270,8 +268,8 @@
         <tr>
           <td class="info">
             <h3 style="text-decoration: none; color: #000000;"><?= $data['tit_projeto'] ?></h3>
-            <p><b></b class="pub"> Autor: Gabriel Lamarca</p>
-            <p class="pub">• Biólogo Marinho</p>
+            <p><b></b class="pub"> Autor: <?= $data ['nom_cientista'] ?></p>
+            <p class="pub">• <?= $data ['nom_area_atuacao'] ?></p>
           </td>
           <td class="espaco"></td>
           <td class="data">

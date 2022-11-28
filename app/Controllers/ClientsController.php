@@ -42,7 +42,6 @@
         {
             /* session para verificar se precisa do codigo */
             $_SESSION['ModalVerifica'] = $resultModal;
-            
         }
     }
 }
