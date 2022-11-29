@@ -17,13 +17,17 @@ include('../Controllers/PerfilController.php');
 $controller = new PerfilController();
 
 $action = !empty($_GET['a']) ? $_GET['a'] : 'getAllPerfil';
-$actionNom = !empty($_GET['a']) ? $_GET['a'] : 'getNom';
+// $actionNom = !empty($_GET['a']) ? $_GET['a'] : 'getNom';
 
 $controller->{$action}();
-$controller->{$actionNom}();
+// $controller->{$actionNom}();
 
 $resultData = $_SESSION['perfil'];
-$resultDataNom = $_SESSION['Nom'];
+// $result=$_SESSION['Nom'];
+$str = implode(" ",$_SESSION['Nom']);
+$name= strstr($str, ' ', true);
+// echo $name;exit;
+
 
 ?>
 <!DOCTYPE html>
@@ -195,9 +199,7 @@ $resultDataNom = $_SESSION['Nom'];
         <img src="./img/iconCientista.png" alt="">
 
         <div class="dropdown">
-        <?php foreach ($resultDataNom as $data) : ?>
-          <span><?= $data['nom_cientista'] ?></span>
-          <?php endforeach; ?>
+          <span><?=$name?></span>
           <div class="dropdown-content">
             <div class="teste">
               <a href="CadastroPerfil.php" class="son">Editar Perfil</a><br>

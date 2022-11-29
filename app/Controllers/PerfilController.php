@@ -26,12 +26,12 @@
         $resultData = $this->model->getAllCientista($_SESSION['login']);
         $_SESSION['perfil'] = $resultData;
     }
-    function getNom()
-    {
-         /*Pegar publicação do banco*/
-        $resultData = $this->model->getNom($_SESSION['login']);
-        $_SESSION['Nom'] = $resultData;
-    }
+    // function getNom()
+    // {
+    //      /*Pegar publicação do banco*/
+    //     $resultData = $this->model->getNom($_SESSION['login']);
+    //     $_SESSION['Nom'] = $resultData;
+    // }
 
     function getAllPaginaPerfil(){
         $resultData = $this->model->getAllPaginaPerfil($_SESSION['login']);

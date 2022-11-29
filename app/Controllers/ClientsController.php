@@ -7,8 +7,6 @@
 
 <?php
 
-   
-    require_once "../Dao/Client.php";
     include '../Controllers/IClientsController.php';
 
     class ClientsController 

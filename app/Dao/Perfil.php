@@ -51,15 +51,14 @@
             $resultQuery = $sqlSelect->fetchAll();
             return $resultQuery;
 
-            // ,nom_area_atuacao
         }
-        function getNom($id)
-        { 
-            /*Query para pegar nome*/
-            $sqlSelect = $this->pdo->query("SELECT nom_cientista FROM $this->tableCientista WHERE id_cientista =$id ");
-            $sqlSelect ->execute();
-            return $sqlSelect;        
-        } 
+        // function getNom($id)
+        // { 
+        //     /*Query para pegar nome*/
+        //     $sqlSelect = $this->pdo->query("SELECT nom_cientista FROM $this->tableCientista WHERE id_cientista =$id ");
+        //     $sqlSelect ->execute();
+        //     return $sqlSelect;        
+        // } 
 
     }
 ?>
